@@ -1,0 +1,371 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9e9;
+    font-family: Arial, cambria, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    line-height: 1.3;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.topbar {
+    background-color: #4f4f4f;
+    color: #e9e9e9;
+}
+
+.topbar-logo {
+    size: 25px;
+    display: block;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.topbar-nav {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.topbar-nav a {
+    display: inline-block;
+    margin: 0 12.5px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.topbar-nav :hover,
+.topbar-nav a .active {
+    color: #ffffff;
+    transition: color .5s;
+}
+
+
+/*about nav class="sidebar" in left side*/
+
+.site {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.containts {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 0.6em 0;
+    width: 50%;
+    border: solid 1px transparent;
+    padding-left: 10px;
+    transition: .3s;
+}
+
+.sidebar a::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 17px;
+    background: url("icons/icons8_home_32px.png") center center/ contain no-repeat;
+    vertical-align: center;
+    margin-top: -10px;
+    margin-right: 20px;
+    opacity: .60;
+    transition: opacity .3s;
+}
+
+.sidebar .sidebar-perfil::before {
+    background-image: url(icons/icons8_profiles_16px.png)
+}
+
+.sidebar .sidebar-messages::before {
+    background-image: url(icons/icons8_group_message_32px.png);
+}
+
+.sidebar .sidebar-chat::before {
+    background-image: url(icons/icons8_chat_room_80px.png);
+}
+
+.sidebar .sidebar-notification::before {
+    background-image: url(icons/icons8_notification_100px.png);
+}
+
+.sidebar .sidebar-menu::before {
+    background-image: url(icons/icons8_menu_24px.png);
+}
+
+.sidebar a:hover {
+    /*text-decoration: underline;*/
+    font-size: 12.5px;
+    transition: .3s;
+}
+
+.sidebar :hover,
+.sidebar .active {
+    border: solid 1px rgba(255, 255, 255);
+    color: #000000;
+    background: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.sidebar :hover::before,
+.sidebar .active::before {
+    opacity: 1;
+}
+
+
+/*
+.sidebar{
+    background: #ddd7d7
+}
+
+.containts{
+    background: white;
+}
+
+.menu {
+    background:#4f4f4f;
+}
+*/
+
+
+/* about card- contaeiner*/
+
+.card {
+    border: solid 1px #ddd7d7;
+    background: #fff;
+    border-radius: 11px;
+    margin-bottom: 15px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.head-card {
+    padding: 10px;
+    position: relative;
+}
+
+.card-avatar {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-title {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.card-time {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 12px
+}
+
+.head-card-avatar {
+    padding-left: 70px;
+}
+
+.card-content {
+    padding: 0 10px 20px 10px;
+}
+
+.card-content p:first-child {
+    margin-top: 0;
+}
+
+.card-content p:last-child {
+    margin-bottom: 0;
+}
+
+.card-content .full-image {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+    display: block;
+}
+
+
+/*about card-footer*/
+
+.card-footer {
+    border-top: solid 1px #aca7a7;
+    background: #dbdbdb;
+    display: flex;
+    padding: 10px;
+    font-size: 12px;
+    color: #bdbdbd;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.coment-card::before,
+.like-card::before {
+    content: '';
+    width: 20px;
+    height: 18px;
+    background: url(icons/icons8_facebook_like_64px.png) center center / 20px 18px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.coment-card {
+    margin-left: auto;
+}
+
+.coment-card::before {
+    background: url(icons/icons8_send_comment_50px.png) center center / 18px 17px no-repeat;
+}
+
+
+/*the 3th part : about the profile side*/
+
+.sidebar-title {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+
+.sidebar-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: black;
+    margin-top: 4px;
+}
+
+.profile {
+    display: none;
+}
+
+.friend {
+    margin: 14px 0px;
+    display: flex;
+}
+
+.friend-boody {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-id {
+    display: block;
+    font-weight: bold;
+    color: black;
+    font-size: 15PX;
+    margin-bottom: 5px;
+}
+
+.friend-avatar {
+    height: 73px;
+    width: 73px;
+    flex: none;
+    margin-right: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.friendconnection {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+}
+
+.add-friend {
+    display: block;
+    font-size: 12px;
+    color: black;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.add-friend::before {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 13px;
+    transform: translateY(-1px);
+    background: center center/ 18px 13px no-repeat url(icons/icons8_crowd_40px.png);
+    vertical-align: middle;
+    margin-right: 5px;
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+}
+
+@media only screen and ( min-width: 590px) {
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 25px;
+    }
+    .topbar-logo,
+    .topbar-nav {
+        padding: 0;
+    }
+    .topbar-nav a {
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .site {
+        display: flex;
+    }
+    .sidebar {
+        display: block;
+        flex: none;
+        width: 180px;
+    }
+    .sidebar a {
+        width: 100%;
+    }
+    .menu {
+        flex: none;
+        width: 310px;
+    }
+    .containts {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    height: 80vh;
+    background: url(images/60549d20e2aa3686d2b0686d_AdobeStock_310133756-p-2600.jpeg);
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav #logo {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+header nav a {
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+header nav a:hover {
+    color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+header .entete {
+    margin-top: 50px;
+    text-shadow: 1px 1px black;
+}
+
+header .entete h4 {
+    padding: 20px;
+    margin-top: -25px;
+}
+
+.presentations {
+    background: #222f3c;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.presentations .gauche {
+    width: 60%;
+    margin-right: 10px;
+}
+
+.offres {
+    padding: 30px;
+    background: url(images/34369136_1604348379692321_2931973589416542208_n.jpg);
+    background-position: center;
+    color: #fff;
+}
+
+.offres h1,
+.offres h4 {
+    text-align: center;
+}
+
+.offres .cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.offres .cartes .carte {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.partenaires {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: #222f3c;
+    color: #fff;
+}
+
+.partenaires .confiance h1 {
+    text-align: center;
+}
+
+.partenaires .partenaires-logos {
+    display: flex;
+    overflow-x: auto;
+}
+
+.partenaires .partenaires-logos p {
+    margin: 10px 20px;
+}
+
+.partenaires img {
+    height: 100px;
+}
+
+.contact {
+    background: #18212b;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.contact .social-media {
+    display: flex;
+}
+
+.contact .social-media p {
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media screen and ( max-width: 810px) {
+    .presentations .gauche {
+        width: 100%;
+    }
+    .presentations {
+        display: flex;
+        justify-content: center;
+    }
+}
